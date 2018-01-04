@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>New Trade Study</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body> 
+        <!-- MultiStep Form -->
+        <div id="newtrade" class="row">
+            <div class="col-md-12">
+                <form id="msform" method="post" action="MyServlet">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li class="active">Trade Study Info</li>
+                        <li>Parameters</li>
+                        <li>Options</li>
+                        <li>Raw Score</li>
+                    </ul>
+                    <!-- fieldsets -->
+                    <fieldset id="firstFieldset">
+                        <h2 class="fs-title">Trade Study Info</h2>
+                        <h3 class="fs-subtitle">Tell us information about trade</h3>
+                        <input type="text" name="tsName" placeholder="Trade Study Name"/>
+                        <input type="text" name="programName" placeholder="Program Name"/>
+                        <input type="text" name="topicName" placeholder="Topic Name"/>
+                        <input type="text" name="author" placeholder="Author"/>
+                        
+                        <!-- <input type="number" name="numParam" placeholder="Number of Parameters"/>
+                        <input type="number" name="numOpt" placeholder="Number of options"/> -->
+                        
+                        <input type="button" name="next" class="next action-button" value="Next"/>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <h2 class="fs-title">Parameters & Options</h2>
+                        <h3 class="fs-subtitle">Information about Parameters</h3>
+                        
+                        <div class="row setup-content" id="params">
+                            <div class="col-xs-12">
+                                <div class="col-md-12 well text-center">
+                                    <h1>Parameters</h1>
+                                    <!-- <form> -->                
+                                    <div class="container col-xs-12">
+                                        <div class="row clearfix">
+                                            <div class="col-md-12 column">
+                                                <table class="table table-bordered table-hover" id="tab_params">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center">#</th>
+                                                            <th class="text-center">Name</th>
+                                                            <th class="text-center">Type</th>
+                                                            <th class="text-center">Preference</th>
+                                                            <th class="text-center">Comparison</th>						
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr id='param0'>
+                                                            <td>1</td> 
+                                                            
+                                                            <td><input type="text" name='paramName0'  placeholder='Name' class="form-control"/></td>
+                                                            
+                                                            <td>
+                                                                <select name="type0" class="form-control">
+                                                                    <option name="dataQuality" value="dataQuality">Data Quality</option>
+                                                                    <option name="eventManagement" value="eventManagement">Event Management</option>
+                                                                    <option name="deployment" value="deployment">Deployment</option>
+                                                                </select>
+                                                            </td>
+                                                            
+                                                            <td>
+                                                                <input type="radio" name="pref0" value="high" />high
+                                                                <input type="radio" name="pref0" value="low" />low
+                                                            </td>
+                                                                      
+                                                            <td>
+                                                                <input type="radio" name="comp0" value="equally" />equally
+                                                                <input type="radio" name="comp0" value="moderately" />moderately
+                                                                <input type="radio" name="comp0" value="greatly" />greatly
+                                                                <input type="radio" name="comp0" value="extremely" />extremely
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr id='param1'></tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <a id="add_param" class="btn btn-success pull-left">Add Parameter</a>
+                                        <a id='delete_param' class="btn btn-danger pull-right">Delete Parameter</a>
+                                    </div>
+                                    <!-- </form> -->  
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="numParams" id="numParams" value="1" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                        <input type="button" name="next" class="next action-button" value="Next"/>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <h2 class="fs-title">Parameters & Options</h2>
+                        <h3 class="fs-subtitle">Names of Options</h3>
+
+                        <div class="row setup-content" id="opts">
+                            <div class="col-xs-12">
+                                <div class="col-md-12 well text-center">
+                                    <h1>Options</h1>
+                                    <!-- <form> -->                
+                                    <div class="container col-xs-12">
+                                        <div class="row clearfix">
+                                            <div class="col-md-12 column">
+                                                <table class="table table-bordered table-hover" id="tab_opt">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center">#</th>
+                                                            <th class="text-center">Name</th>						
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr id='opt0'>
+                                                            <td>1</td>
+                                                            <td><input type="text" name='optName0'  placeholder='Name' class="form-control"/></td>
+                                                        </tr>
+                                                        <tr id='opt1'></tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <a id="add_opt" class="btn btn-success pull-left">Add Option</a>
+                                        <a id='delete_opt' class="btn btn-danger pull-right">Delete Option</a>
+                                    </div>
+                                    <!-- </form> -->  
+                                </div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="numOpts" id="numOpts" value="1" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                        <input type="button" name="next" class="next action-button" id="rawScore_matrix" value="Next"/>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <h2 class="fs-title">Raw Score</h2>
+                        <h3 class="fs-subtitle">Fill in Raw Score Matrix</h3>
+                        
+                        <div class="row setup-content" id="rawScore">
+                            <div class="col-xs-12">
+                                <div class="col-md-12 well text-center">
+                                    <h1>Raw Score</h1>
+                                    <!-- <form> -->                
+                                    <div class="container col-xs-12">
+                                        <div class="row clearfix">
+                                            <div class="col-md-12 column">
+                                                <table class="table table-bordered table-hover" id="tab_raw">
+                                                    <tbody>
+                                                        <tr id='p0'><td id='p0o0'></td></tr>                                                     
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </form> -->  
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                        
+                        <iframe id="txtArea1" style="display:none"></iframe>
+                      
+<!--                        <button id="btnExport" onclick="fnExcelReport();"> EXPORT </button>-->
+                        <input type="submit" name="submit" id="submit_action-button" value="Submit"/>
+                        
+                    </fieldset>
+                </form>
+                
+                <!-- link to designify.me code snippets -->
+                <div class="dme_link">
+                    <p><a href="index.html">Home Page</a></p>
+                </div>
+                <!-- /.link to designify.me code snippets -->
+                
+            </div>
+            
+        </div>
+        <!-- /.MultiStep Form -->
+        
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    
+        <!-- Custom scripts for this template -->
+        <script src="js/multiStep.js"></script>
+        <script src="js/dynamicForm.js"></script>
+        
+    </body>
+</html>
