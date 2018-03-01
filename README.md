@@ -44,5 +44,3 @@ The [Analytic Hierarchy Process](https://en.wikipedia.org/wiki/Analytic_hierarch
 **Fill out Raw Score matrix**
 
 ![Screenshot](./images/RawScoreMatrix.PNG)
-
-
