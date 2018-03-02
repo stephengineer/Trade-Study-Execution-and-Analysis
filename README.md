@@ -4,9 +4,9 @@ Designed a website to conduct and store trade studies using Vue.js, HTML, CSS, a
 
 ## Analytical Hierarchy Process
 
-The [Analytic Hierarchy Process](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) (AHP) was first created by Thomas Saaty in 1977. The model was designed to use pairwise comparisons, between both the options and the criteria used in the model, to create a model that could determine the optimal solution to a decision. The [Ideal Analytic Hierarchy Process](./docs/TSEATintro.pdf), a revised version of the [Analytic Hierarchy Process](./docs/AHPalgorithm.pdf), is what will be used in this model. While there are many different multi-criteria decision-making models that can be used, the Ideal Hierarchy Process is the least likely to give you an incorrect optimal solution.
+The [Analytic Hierarchy Process](https://en.wikipedia.org/wiki/Analytic_hierarchy_process) (AHP) was first created by Thomas Saaty in 1977. The model was designed to use pairwise comparisons, between both the options and the criteria used in the model, to create a model that could determine the optimal solution to a decision. The [Ideal Analytic Hierarchy Process](./docs/TSEAT%20intro.pdf), a revised version of the [Analytic Hierarchy Process](./docs/AHP%20algorithm.pdf), is what will be used in this model. While there are many different multi-criteria decision-making models that can be used, the Ideal Hierarchy Process is the least likely to give you an incorrect optimal solution.
 
-[Ideal Analytic Hierarchy Process](./docs/AHPtutorial.pdf) will be used as basic algorithm in this model, and there are details of [algorithm and pseudo](./doc/TSEATAlgorithm.pdf). There is a paper to introduce [using analytic hierarchy process for decision making](./docs/AHPpaper.pdf) as well.
+[Ideal Analytic Hierarchy Process](./docs/AHP%20tutorial.pdf) will be used as basic algorithm in this model, and there are details of [algorithm and pseudo](./docs/TSEAT%20Algorithm.pdf). There is a paper to introduce [using analytic hierarchy process for decision making](./docs/AHP%20paper.pdf) as well.
 
 ## Tools
 
