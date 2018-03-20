@@ -20,7 +20,7 @@ The [Analytic Hierarchy Process](https://en.wikipedia.org/wiki/Analytic_hierarch
 - Define Trade: trade study name, program name, topic name, author
 - Define Parameters: numbers, names, types, preferences, comparisons
 - Define Options: numbers, names
-- Evaluate Options: receive raw score
+- Evaluate Options: receive raw score matrix
 - Compare and Select: determine solution and confidence factor, plot results, export a data file with results in database
 
 ## Interface
