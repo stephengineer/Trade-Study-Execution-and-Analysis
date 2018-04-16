@@ -1,6 +1,6 @@
 # Trade Study Execution and Analysis
 
-Designed a website to conduct and store trade studies using [Vue.js](https://vuejs.org/) as a front end framework for making dynamic pages and [Spring Boot](https://projects.spring.io/spring-boot/) as back end framework for creating rest services. Created algorithms with Analytical Hierarchy Process and analyzed subsequently data to identify trends using Java and MatLab
+Designed a website to conduct and store trade studies using [Vue.js](https://vuejs.org/) as a front end framework for making dynamic pages and [Spring Boot](https://projects.spring.io/spring-boot/) as back end framework for creating rest services. Created algorithms with Analytical Hierarchy Process and analyzed subsequently data to identify trends using Java and MatLab.
 
 ## Analytical Hierarchy Process
 
